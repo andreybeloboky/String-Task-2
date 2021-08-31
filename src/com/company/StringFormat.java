@@ -4,6 +4,7 @@ public class StringFormat {
     /**
      * @param str5 - text for edit;
      * @param word - word, which need enter in "%s";
+     * @return - return string with replace "%s" onto user word;
      */
     public static String format(String str5, String... word) {
         char[] arrayChar = str5.toCharArray();
