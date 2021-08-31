@@ -7,10 +7,10 @@ public class StringIsEmpty {
      */
     public static boolean isEmpty(String str){
         boolean str2;
-        if (str.length()-1 == 0) {
-            str2 = false;
-        } else {
+        if (str.length() == 0) {
             str2 = true;
+        } else {
+            str2 = false;
         }
         return str2;
     }
