@@ -31,5 +31,11 @@ public class Main {
         String str7 = scanner.nextLine();
         boolean str8 = StringIsEmpty.isEmpty(str7);
         System.out.println(str8);
+
+        // isBlank method
+        System.out.println("Enter string (method isEmpty)");
+        String str9 = scanner.nextLine();
+        boolean str10 = StringIsBlank.isBlank(str9);
+        System.out.println(str10);
     }
 }
