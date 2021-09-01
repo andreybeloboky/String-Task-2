@@ -8,8 +8,8 @@ public class StringIsBlank {
     public static boolean isBlank (String str){
         boolean str2 = true;
         char[] charToString = str.toCharArray();
-        for (int i = 0; i < charToString.length; i++) {
-            if (charToString[i] != ' ') {
+        for (char c : charToString) {
+            if (c != ' ') {
                 return false;
             }
         }

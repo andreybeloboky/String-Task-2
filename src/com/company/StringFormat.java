@@ -9,14 +9,14 @@ public class StringFormat {
     public static String format(String str5, String... word) {
         char[] arrayChar = str5.toCharArray();
         String string = new String();
+        String charToString = String.valueOf(arrayChar);
         int z = 0;
-        for (int i = 0; i < word.length; i++) {
+        for (String s : word) {
             for (int j = 0; j < arrayChar.length; j++) {
                 if (arrayChar[j] == '%' && arrayChar[j + 1] == 's') {
                     arrayChar[j] = '0';
                     arrayChar[j + 1] = '0';
-                    String charToString = String.valueOf(arrayChar);
-                    string += charToString.substring(z, j) + word[i];
+                    string += charToString.substring(z, j) + s;
                     z = j + 2;
                     break;
                 }

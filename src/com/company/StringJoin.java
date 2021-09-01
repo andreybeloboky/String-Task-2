@@ -8,8 +8,8 @@ public class StringJoin {
      */
     public static String join(String indent, String... str) {
         String str1 = new String();
-        for (int i = 0; i < str.length; i++) {
-            str1 += str[i] + indent;
+        for (String s : str) {
+            str1 += s + indent;
         }
         return str1;
     }

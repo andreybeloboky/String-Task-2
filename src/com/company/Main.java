@@ -22,7 +22,7 @@ public class Main {
         String twoWord = scanner.nextLine();
         System.out.println("Enter three word");
         String threeWord = scanner.nextLine();
-        String str5 = new String("Hi %s. How old are you? %s. Would you like a drink? %s");
+        String str5 = new String("Hi %s. How old are you? %s. Would you like a drink? %s.");
         String str6 = StringFormat.format(str5, oneWord, twoWord, threeWord);
         System.out.println(str6);
 
@@ -37,5 +37,13 @@ public class Main {
         String str9 = scanner.nextLine();
         boolean str10 = StringIsBlank.isBlank(str9);
         System.out.println(str10);
+
+        // split method
+        String str11 = "Hi. How old are you? Would you like a drink? Cool.";
+        String delimiter = "?";
+        String[] str12 = StringSplit.split(str11, delimiter);
+        for (String s : str12) {
+            System.out.println(s);
+        }
     }
 }
