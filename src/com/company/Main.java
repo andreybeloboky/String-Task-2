@@ -45,5 +45,10 @@ public class Main {
         for (String s : str12) {
             System.out.println(s);
         }
+
+        // trim method
+        String str13 = "            Hey. How are you?           ";
+        String str14 = StringIsTrim.trim(str13);
+        System.out.println(str14);
     }
 }
