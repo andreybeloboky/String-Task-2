@@ -5,7 +5,7 @@ public class StringIsEmpty {
      * @param str - users text;
      * @return if string have 0 elements enter true and vice versa;
      */
-    public static boolean isEmpty(String str){
+    public static boolean isEmpty(String str){ // тернарный оператор
         boolean str2;
         if (str.length() == 0) {
             str2 = true;
