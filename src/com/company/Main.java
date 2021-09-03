@@ -50,5 +50,10 @@ public class Main {
         String str13 = "            Hey. How are you?           ";
         String str14 = StringIsTrim.trim(str13);
         System.out.println(str14);
+
+        // toUpperCase method
+        String str15 = "Hi. How old are you? Would you like a drink? Cool.";
+        String str16 = StringIsToUpperCase.toUpperCase(str15);
+        System.out.println(str16);
     }
 }
