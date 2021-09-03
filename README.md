@@ -2,7 +2,7 @@
 
 ## Short description 
 
-Create method which join everything strings 
+Include some classes with method. Method such as : join, format, toUpperCase, trim, isBlank, isEmpty, split.
 
 ## Getting started
 
