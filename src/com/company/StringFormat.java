@@ -2,12 +2,12 @@ package com.company;
 
 public class StringFormat {
     /**
-     * @param str5 - text for edit;
+     * @param str - text for edit;
      * @param word - word, which need enter in "%s";
      * @return - return string with replace "%s" onto user word;
      */
-    public static String format(String str5, String... word) {
-        char[] arrayChar = str5.toCharArray();
+    public static String format(String str, String... word) {
+        char[] arrayChar = str.toCharArray();
         String string = new String();
         String charToString = String.valueOf(arrayChar);
         int z = 0;

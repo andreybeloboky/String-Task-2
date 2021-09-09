@@ -2,11 +2,11 @@ package com.company;
 
 public class StringIsTrim {
     /**
-     * @param str13 - users text;
+     * @param str - users text;
      * @return text without space;
      */
-    public static String trim(String str13) {
-        char[] charToString = str13.toCharArray();
+    public static String trim(String str) {
+        char[] charToString = str.toCharArray();
         int start = 0;
         int end = charToString.length;
         for (char c : charToString) {

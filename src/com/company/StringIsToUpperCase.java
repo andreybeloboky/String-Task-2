@@ -3,11 +3,11 @@ package com.company;
 public class StringIsToUpperCase {
     /**
      *
-     * @param str15 - users text;
+     * @param str - users text;
      * @return return all symbol uppercase;
      */
-    public static String toUpperCase(String str15) {
-        char[] str15ToCharArray = str15.toCharArray();
+    public static String toUpperCase(String str) {
+        char[] str15ToCharArray = str.toCharArray();
         for (int i = 0; i < str15ToCharArray.length; i++) {
             if (str15ToCharArray[i] >= 92 && str15ToCharArray[i] <= 122) {
                 for (int j = 97; j < 122; j++) {
