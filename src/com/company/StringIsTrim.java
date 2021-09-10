@@ -9,16 +9,14 @@ public class StringIsTrim {
         char[] charToString = str.toCharArray();
         int start = 0;
         int end = charToString.length;
-        for (char c : charToString) {
-            if (c != ' ') {
-                break;
-            }
+        int i = 0;
+        while (charToString[i] == ' ') {
+            i++;
             start++;
         }
-        for (int i = charToString.length - 1; i > 0; i--) {
-            if (charToString[i] != ' ') {
-                break;
-            }
+        int j = charToString.length - 1;
+        while (charToString[j] == ' ') {
+            j--;
             end--;
         }
         String stringTrim = String.valueOf(charToString);
