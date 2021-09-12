@@ -2,7 +2,7 @@ package com.company;
 
 public class StringFormat {
     /**
-     * @param str - text for edit;
+     * @param str  - text for edit;
      * @param word - word, which need enter in "%s";
      * @return - return string with replace "%s" onto user word;
      */
@@ -11,16 +11,17 @@ public class StringFormat {
         String string = new String();
         String charToString = String.valueOf(arrayChar);
         int z = 0;
+        int j = 0;
         for (String s : word) {
-            for (int j = 0; j < arrayChar.length; j++) {
+            do {
                 if (arrayChar[j] == '%' && arrayChar[j + 1] == 's') {
                     arrayChar[j] = '0';
                     arrayChar[j + 1] = '0';
                     string += charToString.substring(z, j) + s;
                     z = j + 2;
-                    break;
                 }
-            }
+                j++;
+            } while (arrayChar[j] != '0' && arrayChar[j + 1] != '0');
         }
         return string;
     }
