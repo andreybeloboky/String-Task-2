@@ -3,14 +3,14 @@ package com.company;
 public class StringJoin {
     /**
      * @param indent - spaces between string;
-     * @param str    - vararg, array from string;
+     * @param words    - vararg, array from string;
      * @return string join with everything strings;
      */
-    public static String join(String indent, String... str) {
-        String str1 = new String();
-        for (String s : str) {
-            str1 += s + indent;
+    public static String join(String indent, String... words) {
+        String string = new String();
+        for (String word : words) {
+            string += word + indent;
         }
-        return str1;
+        return string;
     }
 }
