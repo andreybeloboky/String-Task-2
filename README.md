@@ -8,13 +8,13 @@ Include some classes with method. Method such as : join, format, toUpperCase, tr
 
 You can run your java program on a Linux machine by opening a terminal.
 
-1. Step 1; - Install JDK 16.
+1. **Step 1**; - Install JDK 16.
 
-2. Step 2: open a terminal, point to the folder or package where your main program is present.
+2. **Step 2**: open a terminal, point to the folder or package where your main program is present.
 
-3. Step 3: - compile it with command javac. javac *.java in folder project > src > com > company. 
+3. **Step 3**: - compile it with command javac. javac *.java in folder project > src > com > company. 
 
-4. Step 4: - After the compilation class file is available, run it with java filename
+4. **Step 4**: - After the compilation class file is available, run it with java filename
 
 If you have multiple methods use the command to compile javac *. java
 
