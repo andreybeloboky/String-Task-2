@@ -1,4 +1,4 @@
-# [String] Task 2
+# [String] Some methods
 
 ## Short description 
 
